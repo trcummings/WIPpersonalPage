@@ -1,0 +1,51 @@
+https://github.com/trcummings/trcummings.github.io.git
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <canvas
+      width="1900"
+      height="600"
+      id="canvas"
+      style="background: url('./sky.jpg')"
+    ></canvas>
+    <script>
+      var canvas = document.getElementById('canvas');
+      var c = canvas.getContext('2d');
+      var ga = 0;
+      var fnt = 2
+      var img = Image("./sky.jpg")
+
+      function fadeIn() {
+        canvas.style.background = "url('./hell.jpg')";
+        while (fnt < 200) {
+          ga = ga + 0.15;
+          fnt = fnt + 30;
+          c.shadowColor = "black";
+          c.shadowOffsetX = 0;
+          c.shadowOffsetY = 0;
+          c.shadowBlur = 30;
+          c.fillStyle = "white";
+          c.font = "italic "+fnt+"pt Arial ";
+          c.textBaseline = 'middle';
+          c.textAlign = "center";
+          c.globalAlpha = ga;
+          c.fillText("FUCK YOU", 900, 300);
+        }
+      }
+
+    </script>
+
+    <input
+      type="button"
+      value="CLICK ME FOR A SURPRISE"
+      onclick="fadeIn();"
+    >
+  </body>
+
+</html>
