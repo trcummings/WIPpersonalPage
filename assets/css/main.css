@@ -2503,6 +2503,19 @@
 			font-size: 19px;
 			line-height: 1.65;
 			color: #bf4949;
+			animation: pulse 5s infinite;
+		}
+
+		@keyframes pulse {
+		  0% {
+		    color: #bf4949;
+		  }
+		  50% {
+		    color: #e40f0f;
+		  }
+			100% {
+				color: #bf4949;
+			}
 		}
 
 		#header h1 {
@@ -2572,7 +2585,7 @@
 
 	#main {
 		margin-left: 35%;
-		max-width: 54em;
+		/*max-width: 54em;*/
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
 		background-color: rgba(8, 8, 7, 0.94);
