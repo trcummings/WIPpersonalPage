@@ -1,5 +1,7 @@
 Portfolio Website of T R Cummings
 
+[Live Here!](http:www.thomsencummings.com/ "Portfolio Page")
+
 Template:
 
 Strata by HTML5 UP
